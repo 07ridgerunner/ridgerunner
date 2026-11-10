@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# 1. Redirect to .html for clean URLs
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L,QSA]
+
+# 2. Handle 404 errors by showing the custom 404 page if it exists
+ErrorDocument 404 /404.html
