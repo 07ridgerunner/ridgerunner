@@ -446,3 +446,7 @@ a:hover i.fa-arrow-right {
     animation: none;
   }
 }
+
+/* hide scrollbar on swipeable rows (chips, tabs) */
+.no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }

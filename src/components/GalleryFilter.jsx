@@ -9,13 +9,13 @@ export function GalleryFilter({ items }) {
 
   return (
     <>
-      <div className="mt-8 flex flex-wrap justify-center gap-2">
+      <div className="no-scrollbar -mx-4 mt-8 flex flex-nowrap justify-start gap-2 overflow-x-auto px-4 sm:mx-0 sm:flex-wrap sm:justify-center sm:overflow-visible sm:px-0">
         {cats.map((c) => (
           <button
             key={c}
             type="button"
             onClick={() => setActive(c)}
-            className={`rounded-full px-5 py-2 text-sm font-semibold transition ${
+            className={`shrink-0 whitespace-nowrap rounded-full px-5 py-2 text-sm font-semibold transition ${
               active === c ? 'bg-ridge-navy text-white' : 'bg-white text-ridge-navy ring-1 ring-slate-200 hover:ring-ridge-yellow'
             }`}
           >

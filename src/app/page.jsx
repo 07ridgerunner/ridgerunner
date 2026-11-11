@@ -113,25 +113,25 @@ export default function Home() {
       <main className="bg-ridge-mist text-ridge-navy">
         {/* 1. HERO */}
         <section className="relative">
-          <div className="relative isolate flex min-h-[560px] items-end overflow-hidden sm:min-h-[560px] lg:min-h-[540px] lg:items-center">
+          <div className="relative isolate flex min-h-[400px] items-end overflow-hidden sm:min-h-[520px] lg:min-h-[540px] lg:items-center">
             <div className="kenburns absolute inset-0 -z-10 bg-cover bg-[position:72%_center] lg:bg-center" style={{ backgroundImage: `url("${P.hero}")` }} />
             <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black/85 via-black/25 to-black/10 lg:bg-gradient-to-r lg:from-black/65 lg:via-black/15 lg:to-transparent" />
-            <div className="mx-auto w-full max-w-7xl px-5 pb-20 pt-24 text-center sm:px-6 lg:px-8 lg:pb-24 lg:pt-10 lg:text-left">
+            <div className="mx-auto w-full max-w-7xl px-5 pb-16 pt-12 text-center sm:px-6 sm:pb-20 sm:pt-24 lg:px-8 lg:pb-24 lg:pt-10 lg:text-left">
               <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-black/35 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-white backdrop-blur sm:text-xs">
                 <span className="h-2 w-2 rounded-full bg-ridge-yellow" /> Small-group Himalayan treks
               </span>
               <h1 className="mt-5 font-display font-bold uppercase leading-[0.95]">
                 <span className="block text-xl font-semibold tracking-[0.35em] text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.6)] sm:text-3xl">Mountains</span>
-                <span className="mt-1 block text-[3.4rem] text-ridge-yellow [text-shadow:0_4px_24px_rgba(0,0,0,0.55)] sm:text-7xl lg:text-8xl">Are Calling</span>
+                <span className="mt-1 block whitespace-nowrap text-[clamp(2.3rem,11.5vw,3.4rem)] text-ridge-yellow [text-shadow:0_4px_24px_rgba(0,0,0,0.55)] sm:text-7xl lg:text-8xl">Are Calling</span>
               </h1>
               <p className="mx-auto mt-4 max-w-sm text-base font-medium text-white [text-shadow:0_2px_10px_rgba(0,0,0,0.7)] sm:text-lg lg:mx-0 lg:max-w-md">
                 Group Treks · Real Experiences · Lifelong Memories
               </p>
-              <div className="mt-7 flex flex-col items-stretch gap-3 sm:flex-row sm:justify-center lg:justify-start">
-                <Link href="/treks" className="btn-pulse inline-flex items-center justify-center gap-3 rounded-full bg-ridge-yellow px-8 py-4 text-sm font-bold uppercase tracking-wider text-ridge-navy shadow-lg">
+              <div className="mt-7 flex flex-row items-stretch justify-center gap-2 sm:gap-3 lg:justify-start">
+                <Link href="/treks" className="btn-pulse inline-flex flex-1 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-ridge-yellow px-3 py-3.5 text-xs font-bold uppercase tracking-wide text-ridge-navy shadow-lg sm:flex-none sm:gap-3 sm:px-8 sm:py-4 sm:text-sm sm:tracking-wider">
                   Explore Treks <i className="fa-solid fa-arrow-right" aria-hidden="true" />
                 </Link>
-                <a href={`https://wa.me/${siteSettings.whatsappNumber}`} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/50 bg-white/10 px-8 py-4 text-sm font-bold uppercase tracking-wider text-white backdrop-blur">
+                <a href={`https://wa.me/${siteSettings.whatsappNumber}`} target="_blank" rel="noreferrer" className="inline-flex flex-1 items-center justify-center gap-2 whitespace-nowrap rounded-full border border-white/50 bg-white/10 px-3 py-3.5 text-xs font-bold uppercase tracking-wide text-white backdrop-blur sm:flex-none sm:px-8 sm:py-4 sm:text-sm sm:tracking-wider">
                   <i className="fa-brands fa-whatsapp text-lg" aria-hidden="true" /> WhatsApp Us
                 </a>
               </div>
@@ -161,9 +161,9 @@ export default function Home() {
         <section className="px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <Heading title="Upcoming Treks" />
-            <div className="mt-8 flex flex-wrap justify-center gap-2">
+            <div className="no-scrollbar -mx-4 mt-8 flex flex-nowrap justify-start gap-2 overflow-x-auto px-4 sm:mx-0 sm:flex-wrap sm:justify-center sm:overflow-visible sm:px-0">
               {['All Treks', 'Winter', 'Spring', 'Summer', 'Monsoon'].map((c, i) => (
-                <span key={c} className={`rounded-full px-5 py-2 text-sm font-semibold ${i === 0 ? 'bg-ridge-navy text-white' : 'bg-white ring-1 ring-slate-200'}`}>{c}</span>
+                <span key={c} className={`shrink-0 whitespace-nowrap rounded-full px-5 py-2 text-sm font-semibold ${i === 0 ? 'bg-ridge-navy text-white' : 'bg-white ring-1 ring-slate-200'}`}>{c}</span>
               ))}
             </div>
             <div className="mt-10 grid gap-4 lg:grid-cols-2 lg:gap-6">
@@ -288,16 +288,15 @@ export default function Home() {
         <section className="px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <Heading eyebrow="Simple & stress-free" title="How It Works" sub="From the first message to the summit, we handle the details." />
-            <div className="relative mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              <div className="pointer-events-none absolute left-[12%] right-[12%] top-8 hidden border-t-2 border-dashed border-ridge-yellow/60 lg:block" />
+            <div className="no-scrollbar -mx-4 mt-10 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-6 pt-2 sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-6 sm:overflow-visible sm:px-0 lg:grid-cols-4">
               {steps.map((st, i) => (
-                <div key={st.title} className="relative text-center">
-                  <span className="relative mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-ridge-yellow text-2xl shadow-lg ring-8 ring-ridge-mist">
+                <div key={st.title} className="relative w-[76%] shrink-0 snap-center rounded-2xl bg-white p-6 text-center shadow-md ring-1 ring-slate-100 transition hover:-translate-y-1 hover:shadow-xl sm:w-auto sm:p-7">
+                  <span className="relative mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-ridge-yellow text-2xl shadow-lg ring-8 ring-ridge-sky">
                     <i className={`fa-solid ${st.icon}`} aria-hidden="true" />
                     <span className="absolute -right-1 -top-1 flex h-6 w-6 items-center justify-center rounded-full bg-ridge-navy text-xs font-bold text-white">{i + 1}</span>
                   </span>
                   <h3 className="mt-5 font-display text-2xl font-bold">{st.title}</h3>
-                  <p className="mx-auto mt-2 max-w-[240px] text-sm text-slate-600">{st.desc}</p>
+                  <p className="mx-auto mt-2 max-w-[260px] text-sm text-slate-600">{st.desc}</p>
                 </div>
               ))}
             </div>
@@ -365,7 +364,7 @@ export default function Home() {
           <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-2 lg:gap-14">
             <div className="text-center lg:text-left">
               <p className="text-xs font-semibold uppercase tracking-[0.25em] text-ridge-navy/60">Our story</p>
-              <h2 className="mt-2 font-display text-4xl font-bold sm:text-5xl">About<br />Ridge Runner Adventures</h2>
+              <h2 className="mt-2 font-display text-[clamp(1.55rem,7.2vw,2.25rem)] font-bold leading-tight sm:text-5xl">About<br /><span className="whitespace-nowrap sm:whitespace-normal">Ridge Runner Adventures</span></h2>
               <span className="mx-auto mt-3 block h-1 w-16 rounded-full bg-ridge-yellow lg:mx-0" />
               <p className="mt-5 text-lg leading-relaxed text-slate-600">
                 Born from a deep love for the mountains, Ridge Runner Adventures is a community of trekkers, explorers and storytellers. We believe in responsible travel, meaningful experiences and creating journeys that go beyond destinations.

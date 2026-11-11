@@ -74,7 +74,7 @@ export default function TrekDetailPage({ params }) {
               </div>
 
               {/* Tabs */}
-              <nav className="sticky top-[65px] sm:top-[69px] z-30 -mx-4 mt-8 overflow-x-auto bg-ridge-mist/95 px-4 backdrop-blur sm:mx-0 sm:px-0">
+              <nav className="no-scrollbar sticky top-[65px] sm:top-[69px] z-30 -mx-4 mt-8 overflow-x-auto bg-ridge-mist/95 px-4 backdrop-blur sm:mx-0 sm:px-0">
                 <div className="flex gap-6 border-b border-slate-200 text-sm font-semibold text-slate-500">
                   {tabs.map(([id, label]) => (
                     <a key={id} href={`#${id}`} className="whitespace-nowrap border-b-2 border-transparent pb-3 pt-3 transition hover:border-ridge-yellow hover:text-ridge-navy">
