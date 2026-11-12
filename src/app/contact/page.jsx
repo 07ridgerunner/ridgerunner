@@ -25,7 +25,7 @@ export default function ContactPage() {
           backgroundImage="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=80"
           breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Contact' }]}
         />
-        <section className="px-4 pb-20 pt-6 sm:px-6 lg:px-8">
+        <section className="px-4 pb-10 sm:pb-20 pt-6 sm:px-6 lg:px-8">
           <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-5">
             <div className="space-y-4 lg:col-span-2">
               <SectionHeading eyebrow="Reach us" title="Contact Us" description="We usually respond on WhatsApp and email with route suggestions, departure dates and custom planning support." />

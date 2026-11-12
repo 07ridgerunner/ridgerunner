@@ -33,7 +33,7 @@ export default function AboutPage() {
           breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'About' }]}
         />
 
-        <section className="px-4 pb-20 pt-6 sm:px-6 lg:px-8">
+        <section className="px-4 pb-10 sm:pb-20 pt-6 sm:px-6 lg:px-8">
           <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-2 lg:gap-14">
             <div>
               <SectionHeading eyebrow="Our story" title="Every route is designed to feel both adventurous and well guided" />
@@ -62,7 +62,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="bg-white px-4 py-20 sm:px-6 lg:px-8">
+        <section className="bg-white px-4 py-10 sm:py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <SectionHeading centered eyebrow="What matters most" title="The way we travel" />
             <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -79,7 +79,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <div className="pt-20">
+        <div className="pt-10 sm:pt-20">
           <CtaBand />
         </div>
       </main>

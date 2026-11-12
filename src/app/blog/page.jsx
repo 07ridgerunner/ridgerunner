@@ -20,7 +20,7 @@ export default function BlogPage() {
           backgroundImage="https://images.unsplash.com/photo-1458668383970-8ddd3927deed?auto=format&fit=crop&w=1800&q=80"
           breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Blog' }]}
         />
-        <section className="px-4 pb-20 pt-6 sm:px-6 lg:px-8">
+        <section className="px-4 pb-10 sm:pb-20 pt-6 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <SectionHeading centered eyebrow="Blog" title="Read what helps you travel better in the mountains" />
             <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

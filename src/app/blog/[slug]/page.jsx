@@ -51,7 +51,7 @@ export default function BlogDetailPage({ params }) {
         </section>
 
         {more.length ? (
-          <section className="px-4 pb-20 sm:px-6 lg:px-8">
+          <section className="px-4 pb-10 sm:pb-20 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-5xl">
               <h2 className="font-display text-3xl font-bold">More to read</h2>
               <span className="mt-3 block h-1 w-16 rounded-full bg-ridge-yellow" />

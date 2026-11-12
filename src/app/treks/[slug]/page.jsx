@@ -50,7 +50,7 @@ export default function TrekDetailPage({ params }) {
           breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Treks', href: '/treks' }, { label: trek.name }]}
         />
 
-        <section className="px-4 pb-20 pt-4 sm:px-6 lg:px-8">
+        <section className="px-4 pb-10 sm:pb-20 pt-4 sm:px-6 lg:px-8">
           <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_380px]">
             <div className="min-w-0">
               {/* Photos */}
@@ -193,7 +193,7 @@ export default function TrekDetailPage({ params }) {
         </section>
 
         {relatedTreks.length ? (
-          <section className="bg-white px-4 py-20 sm:px-6 lg:px-8">
+          <section className="bg-white px-4 py-10 sm:py-20 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-7xl">
               <SectionHeading centered eyebrow="Similar treks" title="Routes you may also love" />
               <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -203,7 +203,7 @@ export default function TrekDetailPage({ params }) {
           </section>
         ) : null}
 
-        <section id="enquire" className="scroll-mt-20 px-4 py-20 sm:px-6 lg:px-8">
+        <section id="enquire" className="scroll-mt-20 px-4 py-10 sm:py-20 sm:px-6 lg:px-8">
           <div className="mx-auto grid max-w-7xl items-start gap-10 lg:grid-cols-5">
             <div className="lg:col-span-2">
               <SectionHeading eyebrow="Enquiry" title={`Ask about ${trek.name}`} description="Share your dates and group size. We’ll reply on WhatsApp with availability and a detailed plan." />

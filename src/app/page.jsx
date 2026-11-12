@@ -115,27 +115,27 @@ export default function Home() {
         <section className="relative">
           <div className="relative isolate flex min-h-[400px] items-end overflow-hidden sm:min-h-[520px] lg:min-h-[540px] lg:items-center">
             <div className="kenburns absolute inset-0 -z-10 bg-cover bg-[position:72%_center] lg:bg-center" style={{ backgroundImage: `url("${P.hero}")` }} />
-            <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black/85 via-black/25 to-black/10 lg:bg-gradient-to-r lg:from-black/65 lg:via-black/15 lg:to-transparent" />
+            <div className="absolute inset-0 -z-10 bg-gradient-to-t from-white/55 via-white/15 to-transparent lg:bg-gradient-to-r lg:from-white/60 lg:via-white/15 lg:to-transparent" />
             <div className="mx-auto w-full max-w-7xl px-5 pb-16 pt-12 text-center sm:px-6 sm:pb-20 sm:pt-24 lg:px-8 lg:pb-24 lg:pt-10 lg:text-left">
-              <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-black/35 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-white backdrop-blur sm:text-xs">
+              <span className="inline-flex items-center gap-2 rounded-full border border-black/20 bg-white/70 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-black backdrop-blur sm:text-xs">
                 <span className="h-2 w-2 rounded-full bg-ridge-yellow" /> Small-group Himalayan treks
               </span>
               <h1 className="mt-5 font-display font-bold uppercase leading-[0.95]">
-                <span className="block text-xl font-semibold tracking-[0.35em] text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.6)] sm:text-3xl">Mountains</span>
-                <span className="mt-1 block whitespace-nowrap text-[clamp(2.3rem,11.5vw,3.4rem)] text-ridge-yellow [text-shadow:0_4px_24px_rgba(0,0,0,0.55)] sm:text-7xl lg:text-8xl">Are Calling</span>
+                <span className="block text-xl font-semibold tracking-[0.35em] text-black sm:text-3xl">Mountains</span>
+                <span className="mt-1 block whitespace-nowrap text-[clamp(2.3rem,11.5vw,3.4rem)] text-black [text-shadow:0_0_18px_rgba(255,255,255,0.9),0_0_6px_rgba(255,255,255,0.8)] sm:text-7xl lg:text-8xl">Are Calling</span>
               </h1>
-              <p className="mx-auto mt-4 max-w-sm text-base font-medium text-white [text-shadow:0_2px_10px_rgba(0,0,0,0.7)] sm:text-lg lg:mx-0 lg:max-w-md">
+              <p className="mx-auto mt-4 max-w-sm text-base font-semibold text-black [text-shadow:0_0_10px_rgba(255,255,255,0.95),0_0_4px_rgba(255,255,255,0.9)] sm:text-lg lg:mx-0 lg:max-w-md">
                 Group Treks · Real Experiences · Lifelong Memories
               </p>
               <div className="mt-7 flex flex-row items-stretch justify-center gap-2 sm:gap-3 lg:justify-start">
                 <Link href="/treks" className="btn-pulse inline-flex flex-1 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-ridge-yellow px-3 py-3.5 text-xs font-bold uppercase tracking-wide text-ridge-navy shadow-lg sm:flex-none sm:gap-3 sm:px-8 sm:py-4 sm:text-sm sm:tracking-wider">
                   Explore Treks <i className="fa-solid fa-arrow-right" aria-hidden="true" />
                 </Link>
-                <a href={`https://wa.me/${siteSettings.whatsappNumber}`} target="_blank" rel="noreferrer" className="inline-flex flex-1 items-center justify-center gap-2 whitespace-nowrap rounded-full border border-white/50 bg-white/10 px-3 py-3.5 text-xs font-bold uppercase tracking-wide text-white backdrop-blur sm:flex-none sm:px-8 sm:py-4 sm:text-sm sm:tracking-wider">
+                <a href={`https://wa.me/${siteSettings.whatsappNumber}`} target="_blank" rel="noreferrer" className="inline-flex flex-1 items-center justify-center gap-2 whitespace-nowrap rounded-full border-2 border-black bg-white/60 px-3 py-3.5 text-xs font-bold uppercase tracking-wide text-black backdrop-blur sm:flex-none sm:px-8 sm:py-4 sm:text-sm sm:tracking-wider">
                   <i className="fa-brands fa-whatsapp text-lg" aria-hidden="true" /> WhatsApp Us
                 </a>
               </div>
-              <div className="mt-6 flex items-center justify-center gap-3 text-sm text-white/90 lg:justify-start">
+              <div className="mt-6 flex items-center justify-center gap-3 text-sm text-black lg:justify-start">
                 <span className="text-ridge-yellow" aria-hidden="true">
                   {[0, 1, 2, 3, 4].map((n) => <i key={n} className="fa-solid fa-star mr-0.5 text-xs" />)}
                 </span>
@@ -158,7 +158,7 @@ export default function Home() {
         </section>
 
         {/* 2. UPCOMING TREKS */}
-        <section className="px-4 py-20 sm:px-6 lg:px-8">
+        <section className="px-4 py-10 sm:py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <Heading title="Upcoming Treks" />
             <div className="no-scrollbar -mx-4 mt-8 flex flex-nowrap justify-start gap-2 overflow-x-auto px-4 sm:mx-0 sm:flex-wrap sm:justify-center sm:overflow-visible sm:px-0">
@@ -194,10 +194,10 @@ export default function Home() {
         </section>
 
         {/* 3. DESTINATIONS */}
-        <section className="bg-white px-4 py-20 sm:px-6 lg:px-8">
+        <section className="bg-white px-4 py-10 sm:py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <Heading eyebrow="Explore the Himalayas" title="Our Destinations" sub="From snow-capped peaks to alpine lakes, discover trails that stay with you forever." />
-            <div className="mt-12 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3">
+            <div className="mt-8 grid sm:mt-12 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3">
               {destinations.map((d) => (
                 <Link key={d.name} href="/destinations" className="group relative block aspect-[4/5] overflow-hidden rounded-2xl shadow-md sm:aspect-[4/3] lg:aspect-[5/4]">
                   <div className="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-110" style={{ backgroundImage: `url("${d.image}")` }} />
@@ -218,7 +218,7 @@ export default function Home() {
         </section>
 
         {/* 4. TREK DETAIL SPOTLIGHT */}
-        <section className="px-4 py-20 sm:px-6 lg:px-8">
+        <section className="px-4 py-10 sm:py-20 sm:px-6 lg:px-8">
           <div className="mx-auto grid max-w-7xl items-start gap-8 lg:grid-cols-2 lg:gap-12">
             <div>
               <div className="aspect-[4/3] overflow-hidden rounded-3xl shadow-xl">
@@ -266,10 +266,10 @@ export default function Home() {
         </section>
 
         {/* 5. WHY CHOOSE US */}
-        <section className="relative overflow-hidden bg-white px-4 py-20 sm:px-6 lg:px-8">
+        <section className="relative overflow-hidden bg-white px-4 py-10 sm:py-20 sm:px-6 lg:px-8">
           <div className="relative mx-auto max-w-7xl">
             <Heading eyebrow="Our strength" title="Why Ridge Runner Adventures" sub="More than just treks, we create meaningful mountain experiences." />
-            <div className="mt-12 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3">
+            <div className="mt-8 grid sm:mt-12 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3">
               {whyChooseUs.map((w) => (
                 <div key={w.title} className="rounded-2xl bg-ridge-mist p-5 text-center shadow-sm ring-1 ring-slate-100 transition hover:-translate-y-1 hover:shadow-lg sm:p-8">
                   <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-ridge-yellow text-2xl text-ridge-navy">
@@ -285,7 +285,7 @@ export default function Home() {
         </section>
 
         {/* 5b. HOW IT WORKS */}
-        <section className="px-4 py-20 sm:px-6 lg:px-8">
+        <section className="px-4 py-10 sm:py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <Heading eyebrow="Simple & stress-free" title="How It Works" sub="From the first message to the summit, we handle the details." />
             <div className="no-scrollbar -mx-4 mt-10 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-6 pt-2 sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-6 sm:overflow-visible sm:px-0 lg:grid-cols-4">
@@ -304,14 +304,14 @@ export default function Home() {
         </section>
 
         {/* 5c. STATS BANNER */}
-        <section className="relative isolate overflow-hidden px-4 py-20 text-white sm:px-6 lg:px-8">
+        <section className="relative isolate overflow-hidden px-4 py-10 sm:py-20 text-white sm:px-6 lg:px-8">
           <div className="absolute inset-0 -z-10 bg-cover bg-center" style={{ backgroundImage: `url("${P.lone}")` }} />
           <div className="absolute inset-0 -z-10 bg-black/55" />
           <div className="mx-auto max-w-7xl text-center">
             <p className="mx-auto max-w-3xl font-display text-3xl font-bold italic leading-snug sm:text-5xl">
               “Every summit begins with a single step.”
             </p>
-            <div className="mt-12 grid grid-cols-2 gap-6 lg:grid-cols-4">
+            <div className="mt-8 grid sm:mt-12 grid grid-cols-2 gap-6 lg:grid-cols-4">
               {counters.map(([n, l]) => (
                 <div key={l} className="rounded-2xl border border-white/15 bg-white/10 p-6 backdrop-blur">
                   <p className="font-display text-4xl font-bold text-ridge-yellow sm:text-5xl">{n}</p>
@@ -326,18 +326,18 @@ export default function Home() {
         </section>
 
         {/* 6. GALLERY */}
-        <section className="px-4 py-20 sm:px-6 lg:px-8">
+        <section className="px-4 py-10 sm:py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
-            <Heading eyebrow="Moments from the trails" title="Our Experiences" sub="Real people. Real journeys. Real Himalayas." />
+            <Heading eyebrow="Moments from the trails" title="Our Experiences" sub="" />
             <GalleryFilter items={galleryItems} />
           </div>
         </section>
 
         {/* 7. TESTIMONIALS */}
-        <section className="bg-white px-4 py-20 sm:px-6 lg:px-8">
+        <section className="bg-white px-4 py-10 sm:py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <Heading eyebrow="Voices from our trekkers" title="What Our Trekkers Say" sub="Stories, memories and moments that keep us going." />
-            <div className="mt-12 grid gap-5 md:grid-cols-3">
+            <div className="mt-8 grid sm:mt-12 grid gap-5 md:grid-cols-3">
               {testimonials.map((t) => (
                 <figure key={t.name} className="flex flex-col rounded-2xl bg-ridge-mist p-6 shadow-sm ring-1 ring-slate-100">
                   <div className="flex items-center gap-4">
@@ -360,7 +360,7 @@ export default function Home() {
         </section>
 
         {/* 8. ABOUT */}
-        <section className="px-4 py-20 sm:px-6 lg:px-8">
+        <section className="px-4 py-10 sm:py-20 sm:px-6 lg:px-8">
           <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-2 lg:gap-14">
             <div className="text-center lg:text-left">
               <p className="text-xs font-semibold uppercase tracking-[0.25em] text-ridge-navy/60">Our story</p>
@@ -389,7 +389,7 @@ export default function Home() {
         </section>
 
         {/* 8b. FAQ */}
-        <section className="bg-white px-4 py-20 sm:px-6 lg:px-8">
+        <section className="bg-white px-4 py-10 sm:py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <Heading eyebrow="Good to know" title="Frequently Asked Questions" />
             <div className="mt-10">
@@ -404,10 +404,10 @@ export default function Home() {
         </section>
 
         {/* 9. BOOKING & ENQUIRY */}
-        <section id="enquiry" className="scroll-mt-20 bg-white px-4 py-20 sm:px-6 lg:px-8">
+        <section id="enquiry" className="scroll-mt-20 bg-white px-4 py-10 sm:py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <Heading eyebrow="Plan your next adventure" title="Book a Trek or Send an Enquiry" sub="Have questions? We’re here to help you plan the perfect trek." />
-            <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            <div className="mt-8 grid sm:mt-12 grid gap-6 lg:grid-cols-3">
               <div className="lg:col-span-2">
                 <BookingForm treks={upcomingTreks.map((t) => t.name)} />
               </div>

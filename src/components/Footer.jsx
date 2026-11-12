@@ -61,13 +61,13 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col gap-3 border-t border-white/10 pt-6 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} {siteSettings.name}. All rights reserved.</p>
-          <div className="flex flex-col gap-2 sm:items-end">
+        <div className="mt-14 flex flex-col items-center gap-4 border-t border-white/10 pt-6 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-center sm:text-left">© {new Date().getFullYear()} {siteSettings.name}. All rights reserved.</p>
+          <div className="flex flex-col items-center gap-3 text-center sm:items-end sm:text-right">
             <a href={`https://wa.me/${siteSettings.whatsappNumber}`} target="_blank" rel="noreferrer" className="hover:text-ridge-yellow">
               <i className="fa-brands fa-whatsapp mr-2" aria-hidden="true" />WhatsApp us
             </a>
-            <p>
+            <p className="text-base sm:text-sm">
               Created by{' '}
               <a href="https://deenxconsultancy.com" target="_blank" rel="noopener" className="font-semibold text-ridge-yellow hover:underline">deenxconsultancy.com</a>
             </p>

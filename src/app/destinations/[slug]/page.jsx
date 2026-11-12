@@ -34,7 +34,7 @@ export default function DestinationDetailPage({ params }) {
           backgroundImage={destination.image}
           breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Destinations', href: '/destinations' }, { label: destination.name }]}
         />
-        <section className="px-4 pb-20 pt-6 sm:px-6 lg:px-8">
+        <section className="px-4 pb-10 sm:pb-20 pt-6 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <SectionHeading centered eyebrow="Featured routes" title={`Trekking experiences in ${destination.name}`} />
             {regionTreks.length ? (

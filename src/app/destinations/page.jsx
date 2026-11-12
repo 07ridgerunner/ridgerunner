@@ -20,7 +20,7 @@ export default function DestinationsPage() {
           backgroundImage="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?auto=format&fit=crop&w=1800&q=80"
           breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Destinations' }]}
         />
-        <section className="px-4 pb-20 pt-6 sm:px-6 lg:px-8">
+        <section className="px-4 pb-10 sm:pb-20 pt-6 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <SectionHeading centered eyebrow="Explore" title="Choose the landscape that calls to you" />
             <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
